@@ -82,7 +82,8 @@
     "summernote": "0.8.3",
     "to-markdown": "3.0.4",
     "ts-helpers": "1.1.2",
-    "zone.js": "0.8.5"
+    "zone.js": "0.8.5",
+    "hepers":"^0.0.6"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0",
