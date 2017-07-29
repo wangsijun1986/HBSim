@@ -83,7 +83,7 @@
     "to-markdown": "3.0.4",
     "ts-helpers": "1.1.2",
     "zone.js": "0.8.5",
-    "hepers":"^0.0.6"
+    "hepers": "^0.0.6"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0",
@@ -91,9 +91,10 @@
     "@types/jasmine": "2.5.47",
     "@types/jquery": "^3.2.9",
     "@types/node": "7.0.12",
+    "abbrev": "^1.1.0",
+    "awesome-typescript-loader": "*",
     "codelyzer": "2.1.1",
     "css-loader": "0.28.0",
-    "awesome-typescript-loader":"*",
     "exports-loader": "0.6.4",
     "expose-loader": "0.7.3",
     "file-loader": "0.11.1",
