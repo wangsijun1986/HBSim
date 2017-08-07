@@ -1,7 +1,10 @@
-import { Component } from "@angular/core";
+import { Component,ViewContainerRef } from "@angular/core";
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello word {{name}}</h1>`
+  template: `<router-outlet></router-outlet>`
 })
-export class AppComponent { name = 'Angular'; }
+export class AppComponent { 
+  public title = 'app works!';
+  public constructor(private viewContainerRef: ViewContainerRef) {}
+ }

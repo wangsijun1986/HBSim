@@ -25,8 +25,8 @@ module.exports = {
 	},
 	plugins: [
 		//new webpack.optimize.UglifyJsPlugin(),
-		new webpack.BannerPlugin('HuanBang Software'),
-		new HtmlWebpackPlugin({ template: './src/index.html'})
+		new webpack.BannerPlugin('HuanBang Software')//,
+		//new HtmlWebpackPlugin({ template: './src/index.html'})
 	]
 	// devServer: {
 	// 	historyApiFallback: true,
