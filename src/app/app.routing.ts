@@ -1,27 +1,25 @@
 import { Routes, RouterModule } from "@angular/router";
 import { MainLayoutComponent } from "./layout/main_layout.component";
-import { WebLayoutComponent } from "./layout/web_layout.component";
-import { SimLayoutComponent } from "./layout/sim_layout.component";
 import { ModuleWithProviders } from "@angular/core";
 
 export const routes: Routes = [
     {
         path: "",
         component: MainLayoutComponent,
-        data: { pageTitle: "Home" },
+        //data: { pageTitle: "HBHome" },
         children: [
             {
                 path: "website",
-                component:WebLayoutComponent
+                loadChildren: "app/website/web_layout.module#WebLayoutModule"
                 //data:{ title:"Website Home"}
             },
             {
                 path: "sim",
-                component: SimLayoutComponent
+                loadChildren: "app/sim/sim_layout.module#SimLayoutModule"
             },
             {
                 path: "",
-                redirectTo: "/website",
+                redirectTo: "/sim",
                 pathMatch: "full"
             }
         ]

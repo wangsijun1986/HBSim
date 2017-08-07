@@ -3,16 +3,18 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { routing } from "./app.routing";
+import { HBModule } from './shared/hb.module';
 import { AppComponent } from "./app.component";
-import { MainLayoutComponent } from "./layout/main_layout.component";
+
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
+    HBModule,
     routing
   ],
-  declarations: [AppComponent,MainLayoutComponent],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers:[]
 })
